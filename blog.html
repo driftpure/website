@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Blog Header Styles */
+			.blog-header {
+				padding: 4rem 2rem;
+				text-align: center;
+				background: linear-gradient(rgba(50, 201, 209, 0.1), rgba(50, 201, 209, 0.2));
+				padding-top: 200px;
+			}
+
+			.header-content {
+				max-width: 800px;
+				margin: 0 auto 3rem;
+			}
+
+			.header-content h1 {
+				font-size: 3rem;
+				color: #333;
+				margin-bottom: 1rem;
+			}
+
+			.header-content p {
+				font-size: 1.2rem;
+				color: #666;
+			}
+
+			/* Featured Post Styles */
+			.featured-post {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				gap: 2rem;
+				background: white;
+				border-radius: 15px;
+				overflow: hidden;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease;
+			}
+
+			.featured-post:hover {
+				transform: translateY(-5px);
+			}
+
+			.featured-post img {
+				width: 50%;
+				object-fit: cover;
+			}
+
+			.featured-content {
+				padding: 2rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			/* Blog Grid Styles */
+			.blog-grid {
+				max-width: 1200px;
+				margin: 4rem auto;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+				gap: 2rem;
+				padding: 0 2rem;
+			}
+
+			/* Adjusting blog-card for better mobile responsiveness */
+			.blog-card {
+				background: white;
+				border-radius: 15px;
+				overflow: hidden;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease;
+				width: 100%; /* Ensure full width on mobile */
+			}
+
+			.blog-card:hover {
+				transform: translateY(-10px);
+			}
+
+			.blog-card img {
+				width: 100%;
+				height: 250px;
+				object-fit: cover;
+			}
+
+			.card-content {
+				padding: 1.5rem;
+			}
+
+			.category {
+				display: inline-block;
+				background: #32c9d1;
+				color: white;
+				padding: 0.5rem 1rem;
+				border-radius: 20px;
+				font-size: 0.9rem;
+				margin-bottom: 1rem;
+			}
+
+			.card-content h3 {
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+				color: #333;
+			}
+
+			.card-content p {
+				color: #666;
+				margin-bottom: 1rem;
+				line-height: 1.6;
+			}
+
+			.read-more {
+				color: #32c9d1;
+				text-decoration: none;
+				font-weight: 600;
+				display: inline-block;
+				transition: transform 0.3s ease;
+			}
+
+			.read-more:hover {
+				transform: translateX(5px);
+			}
+
+			/* Logo Styles */
+			.logo {
+				display: block;
+				margin: 0 auto;
+				width: 150px; /* Standard logo size */
+				height: auto; /* Maintain aspect ratio */
+			}
+
+			/* Responsive Styles */
+			@media (max-width: 768px) {
+				.header-content h1 {
+					font-size: 2.5rem; /* Smaller heading for mobile */
+				}
+
+				.header-content p {
+					font-size: 1rem; /* Smaller paragraph for mobile */
+				}
+
+				.blog-grid {
+					grid-template-columns: 1fr; /* Stack cards in a single column on mobile */
+				}
+
+				.blog-card img {
+					height: 200px; /* Adjust image height for mobile */
+				}
+
+				.card-content h3 {
+					font-size: 1.2rem; /* Smaller title for mobile */
+				}
+
+				.card-content p {
+					font-size: 0.9rem; /* Smaller paragraph for mobile */
+				}
+			}
+		</style>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<img src="assets/css/images/logo.png" alt="Logo" class="header-logo" style="max-width: 80px; height: 60px;" />
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="service.html">Service</a></li>
+											<li><a href="team.html">Team</a></li>
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Insights & Innovations in Water Purification</h2>
+							<p><strong>Explore the latest trends, breakthroughs, and solutions in sustainable water desalination, clean energy, and environmental conservation.</strong></p>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- Blog Grid Section -->
+				<section class="blog-grid">
+					<div class="blog-card">
+						<img src="assets/blog1.jpg" alt="Blog Post 1">
+						<div class="card-content">
+							<span class="category">Interior Design</span>
+							<h3>Minimalist Living Room Ideas</h3>
+							<p>Transform your living space with these minimalist design principles...</p>
+							<a href="#" class="read-more">Read More →</a>
+						</div>
+					</div>
+
+					<div class="blog-card">
+						<img src="assets/blog2.jpg" alt="Blog Post 2">
+						<div class="card-content">
+							<span class="category">Sustainability</span>
+							<h3>Eco-Friendly Furniture Choices</h3>
+							<p>Make sustainable choices for your home with these environmentally conscious options...</p>
+							<a href="#" class="read-more">Read More →</a>
+						</div>
+					</div>
+
+					<div class="blog-card">
+						<img src="assets/blog3.jpg" alt="Blog Post 3">
+						<div class="card-content">
+							<span class="category">Tips & Tricks</span>
+							<h3>Small Space Organization</h3>
+							<p>Maximize your living space with these clever organization solutions...</p>
+							<a href="#" class="read-more">Read More →</a>
+						</div>
+					</div>
+
+					<div class="blog-card">
+						<img src="assets/blog4.jpg" alt="Blog Post 4">
+						<div class="card-content">
+							<span class="category">Style Guide</span>
+							<h3>Mix and Match Furniture</h3>
+							<p>Learn the art of combining different furniture styles seamlessly...</p>
+							<a href="#" class="read-more">Read More →</a>
+						</div>
+					</div>
+
+					<div class="blog-card">
+						<img src="assets/blog5.jpg" alt="Blog Post 5">
+						<div class="card-content">
+							<span class="category">Care Guide</span>
+							<h3>Furniture Maintenance Tips</h3>
+							<p>Keep your furniture looking new with these essential care tips...</p>
+							<a href="#" class="read-more">Read More →</a>
+						</div>
+					</div>
+
+					<div class="blog-card">
+						<img src="assets/blog6.jpg" alt="Blog Post 6">
+						<div class="card-content">
+							<span class="category">Inspiration</span>
+							<h3>Color Schemes for 2024</h3>
+							<p>Discover the trending color combinations for modern homes...</p>
+							<a href="#" class="read-more">Read More →</a>
+						</div>
+					</div>
+				</section>
+
+				<div class="load-more">
+					<a href="#" class="load-more-btn">View More Articles</a>
+				</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+                            <li><a href="https://www.facebook.com/people/DriftPure-Innovation/61561137707263/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/drift_pure/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/company/driftpure-innovation/?viewAsMember=true" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							
+						</ul>
+						<ul class="copyright">
+							<li>Copyright © 2024 Drift Pure. All rights reserved.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
